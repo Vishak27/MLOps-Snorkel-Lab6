@@ -34,7 +34,7 @@ python -m spacy download en_core_web_sm
 jupyter notebook
 ```
 
-5. Open `01_sentiment_tutorial.ipynb` and run all cells sequentially
+5. Open `sentiment.ipynb` and run all cells sequentially
 
 ## Lab Steps
 
@@ -62,32 +62,10 @@ jupyter notebook
 
 **Discriminative Classifier**: Final model trained on weak labels
 
-## Expected Results
-
-- **LF Coverage**: 70-80% of training data
-- **Label Model Accuracy**: 75-85%
-- **Final Classifier Accuracy**: 80-90%
-
-## Model Options
-
-Modify Cell 37 to change classifier:
-```python
-# Logistic Regression (default)
-from sklearn.linear_model import LogisticRegression
-sklearn_model = LogisticRegression(C=1e3, solver="liblinear")
-
-# XGBoost (best performance)
-from xgboost import XGBClassifier
-sklearn_model = XGBClassifier(n_estimators=100, max_depth=6)
-
-# Random Forest
-from sklearn.ensemble import RandomForestClassifier
-sklearn_model = RandomForestClassifier(n_estimators=100)
-```
 
 ## Files
 
-* `01_sentiment_tutorial.ipynb` - Main tutorial notebook
+* `sentiment.ipynb` - Main tutorial notebook
 * `utils_sentiment.py` - Helper functions
 * `requirements.txt` - Dependencies
 
