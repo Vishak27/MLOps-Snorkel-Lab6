@@ -1,0 +1,10 @@
+matplotlib
+numpy
+pandas
+scikit-learn
+spacy
+tensorflow
+tensorflow-datasets
+textblob
+snorkel
+ipykernel
